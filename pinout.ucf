@@ -1,0 +1,35 @@
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# This file is a .ucf for Mimas (http://www.numato.com)                                               #
+# To use it in your project :                                                                         #
+# * Remove or comment the lines corresponding to unused pins in the project.                          #
+# * Rename the used signals according to the your project.                                            #
+# * For more detail refer to the User Guide available at http://numato.com/products/fpga-boards/      #
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+
+###################################################################################################################################################
+#                                                   CLK Connections                                                                               #
+###################################################################################################################################################
+
+NET "CLK"      LOC = P126 | IOSTANDARD = LVCMOS33 | Period = 100 MHz;
+
+
+###################################################################################################################################################
+#                                                   VGA Connections                                                                               #
+###################################################################################################################################################
+
+NET "HSYNC"                  LOC = P10      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L50P_3 	   		        Sch = GPIO-P9 
+NET "VSYNC"                   LOC = P33      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L2P_3	   		            Sch = GPIO-P17 
+NET "RGB<0>"                   LOC = P32      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L2N_3           		    Sch = GPIO-N17 
+NET "RGB<1>"                   LOC = P30      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L36P_3          	        Sch = GPIO-P16 
+NET "RGB<2>"                   LOC = P29      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L36N_3          		    Sch = GPIO-N16 
+
+###################################################################################################################################################
+#                                                   PMOD AD1 Connections                                                                          #
+###################################################################################################################################################
+
+NET "ADC_CS"                   LOC = P43      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L62N_D6_2       	        Sch = GPIO-N23 
+NET "ADC_SCLK"                   LOC = P44      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L62P_D5_2			        Sch = GPIO-P23 
+NET "ADC_D0"                   LOC = P45      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L49N_D4_2	   	            Sch = GPIO-N25 
+#NET "ADC_CS"                   LOC = P27      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L37P_3	   		            Sch = GPIO-P15 
+#NET "ADC_SCLK"                  LOC = P26      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L37N_3          		    Sch = GPIO-N15 
+#NET "ADC_D0"                  LOC = P12      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L49P_3          	        Sch = GPIO-P10
