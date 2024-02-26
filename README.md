@@ -16,18 +16,21 @@ GPIOs configuration file:
 
 ## Results
 
-![Project demo](https://github.com/MikeZ7/VGA-Oscilloscope/assets/101725721/255fd25f-8f9c-401b-8667-34f5c615fb0e)
+[!Project demo](https://github.com/MikeZ7/VGA-Oscilloscope/assets/101725721/255fd25f-8f9c-401b-8667-34f5c615fb0e)
 
 - DC signal
 ![](https://github.com/MikeZ7/VGA-Oscilloscope/blob/master/Images%26Video/dc_signal.jpg)
 
 - Sine signal
- ![](https://github.com/MikeZ7/VGA-Oscilloscope/blob/master/Images%26Video/sine_signal.jpg)
+
+![](https://github.com/MikeZ7/VGA-Oscilloscope/blob/master/Images%26Video/sine_signal.jpg)
 
 - Triangle signal
-- ![](https://github.com/MikeZ7/VGA-Oscilloscope/blob/master/Images%26Video/triangle_signal.jpg)
+ 
+![](https://github.com/MikeZ7/VGA-Oscilloscope/blob/master/Images%26Video/triangle_signal.jpg)
 
 -Square signal
+
 ![](https://github.com/MikeZ7/VGA-Oscilloscope/blob/master/Images%26Video/square_signal.jpg)
 
 
