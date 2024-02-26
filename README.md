@@ -39,7 +39,6 @@ Project displays oscillogram vertically due to simpler implementation.
 Oscilloscope lacks synchronization for reading from memory and displaying via VGA.
 8 MSB bits from 12 bit data are used to avoid LUT memory usage so the waveforms are truncated.
 
---
 # Future updates
 - synchronization
 - horizontal drawing
